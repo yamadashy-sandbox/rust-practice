@@ -6,13 +6,16 @@ help:
 .DEFAULT_GOAL := help
 
 # ==================================================
-# Compile
+# Build
 # ==================================================
-.PHONY: compile
-compile: ## compile
-	rustc main.rs --out-dir ./bin
+.PHONY: build
+build: ## build
+	cargo build
 
-.PHONY: compile_run
-compile_run: ## compile
-	rustc main.rs --out-dir ./bin
-	./bin/main
+.PHONY: run
+run: ## run
+	cargo run
+
+.PHONY: release
+release: ## release
+	cargo build --release

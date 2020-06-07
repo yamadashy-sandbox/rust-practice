@@ -1,16 +1,9 @@
 fn main() {
-    // 足し算
-    let sum = 5 + 10;
+    let x: (i32, f64, u8) = (500, 6.4, 1);
 
-    // 引き算
-    let difference = 95.5 - 4.3;
+    let five_hundred = x.0;
 
-    // 掛け算
-    let product = 4 * 30;
+    let six_point_four = x.1;
 
-    // 割り算
-    let quotient = 56.7 / 32.2;
-
-    // 余り
-    let remainder = 43 % 5;
+    let one = x.2;
 }
